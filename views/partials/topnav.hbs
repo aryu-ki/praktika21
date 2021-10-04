@@ -1,0 +1,15 @@
+<style>
+    #topbar>li { padding: 0 1em 0 1em; display: inline-block; background-color:
+    rgba(0,0,0,0); } .header { background-color: hsl(149, 15%, 60%); width:
+    calc(100vw-1em) ; position:sticky; display: flex; flex-direction:
+    row-reverse; padding: 1em; align-items: center; justify-content: end; }
+</style>
+<div class='header'>
+    <ul id='topbar'>
+        <li>Профиль</li>
+        <li>Поиск</li>
+        {{#if username}}
+            <li><h2>{{username}}</h2></li>
+        {{/if}}
+    </ul>
+</div>

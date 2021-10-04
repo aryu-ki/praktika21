@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Bender';
+    src: url('../fonts/Jovanny\ Lemonad\ -\ Bender.otf');
+}
+
+body {
+    background-image: url('../img/bg.png');
+    background-size: 280px 590px;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+* {
+    font-family: Bender;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    color: hsl(203, 30%, 25%);
+}
+
+input[type='button'].strong,
+input[type='submit'] {
+    color: white;
+    border: 2px solid hsl(149, 15%, 30%);
+    background-color: hsl(149, 15%, 60%);
+    box-shadow: 3px 3px hsl(149, 15%, 30%);
+    border: none;
+}
+
+input[type='button'] {
+    border: 2px solid darkgrey;
+
+    box-shadow: 3px 3px darkgrey;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+input {
+    padding: 0.5em;
+    font-size: 1.15em;
+}
+
+input:not([type='button']) {
+    width: 100%;
+    min-width: none;
+    border-radius: 5px;
+}
+
+.gap {
+    gap: 0.8em;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.cnw {
+    flex-flow: column nowrap;
+}
+
+.cw {
+    flex-flow: column wrap;
+}
+
+.rnw {
+    flex-flow: row nowrap;
+}
+
+.rw {
+    flex-flow: row wrap;
+}
+
+.cw,
+.cnw,
+.rw,
+.rnw {
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen {
+    .container {
+        width: 90%;
+        padding: 0 1.7em 0 1.7em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 950px;
+        padding: 0 1.7em 0 1.7em;
+    }
+}

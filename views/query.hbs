@@ -1,0 +1,73 @@
+<div class='wrapper'>
+    <div id='top' class='wrapper'>
+        <div id='title' class='container flex-container cnw gap'>
+            <h1>Куда направляемся?{{!-- 
+            {{#if username}}
+                или ранее использованную команду ниже
+            {{/if}} --}}
+            </h1>
+            <input
+                type='text'
+                name='query'
+                id='query'
+                placeholder='Inser tetxt...'
+            />
+        </div>
+    </div>
+    <div class='wrapper'>
+        {{#if username}}
+            <div id='queries' class='container'>
+                <div id='queryList' class='flex-container cnw gap'>
+                    {{#if queries}}
+                        {{#each queries}}
+                            <option value='{{queryname}}'>{{queryname}}</option>
+                        {{/each}}
+                    {{/if}}
+                </div>
+
+                <div id='queryCreate'>
+                    <input
+                        type='button'
+                        id='createQueryBtn'
+                        value='Создать +'
+                    />
+                    <div id='queryForm' hidden>
+                        <form class='flex-container cnw gap'>
+                            <input
+                                type='text'
+                                name='queryname'
+                                id='querynameInp'
+                                placeholder='Название'
+                            />
+                            <input
+                                type='text'
+                                name='querydest'
+                                id='querydistInp'
+                                placeholder='Направление'
+                            />
+                            <div>
+                                <input
+                                    type='button'
+                                    value='Сохранить'
+                                    id='saveQuery'
+                                    class='strong'
+                                />
+                                <input
+                                    type='button'
+                                    value='Отмена'
+                                    id='cancelQuery'
+                                /></div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        {{/if}}
+    </div>
+    <div class='wrapper'>
+        <main class='container'>
+            <div class='flex-container cnw gap'></div>
+        </main>
+    </div>
+
+</div>

@@ -1,0 +1,37 @@
+@import url(./generalrules.css);
+
+body > .wrapper > .wrapper > .container {
+    background-color: hsla(48, 20%, 88%, 0.8);
+}
+
+#title {
+    padding-top: 0.5em;
+}
+
+#queryCreate {
+    padding-bottom: 1em;
+}
+
+#createQueryBtn {
+    margin-top: 1em;
+}
+
+#queryForm {
+    margin: 1em 0 1em 0;
+}
+
+#queryForm > form {
+    align-items: flex-start;
+}
+
+#queryForm input[type='text'] {
+    width: 80%;
+}
+#query {
+    font-size: 1.15rem;
+    padding: 1em;
+    max-width: none;
+    width: 100%;
+    min-width: none;
+    border-radius: 5px;
+}
